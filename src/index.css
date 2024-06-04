@@ -1,0 +1,24 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set default font and background for the body */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Remove default list styles */
+ul, ol {
+    list-style: none;
+}
+
+/* Anchor tag styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
