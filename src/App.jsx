@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { CssBaseline, Box } from "@mui/material";
+import { Box } from "@mui/material";
 import Sidebar from "./components/SideBar/SideBar";
 import Header from "./components/Header/Header";
 import Financial from "./sections/Financial/Financial";

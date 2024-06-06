@@ -1,4 +1,8 @@
-import { Card, CardContent, Typography, Grid } from '@mui/material';
+import { Card, CardContent, Typography, Grid } from "@mui/material";
+import CallToActionIcon from "@mui/icons-material/CallToAction";
+import TrendingUpIcon from "@mui/icons-material/TrendingUp";
+import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
+import MoneyIcon from "@mui/icons-material/Money";
 
 const FinancialOverview = () => {
   const data = {
@@ -9,36 +13,68 @@ const FinancialOverview = () => {
   };
 
   return (
-    <Grid container spacing={2}>
+    <Grid container spacing={2} marginBottom={6}>
       <Grid item xs={3}>
-        <Card className='card'>
+        <Card className="card">
           <CardContent>
-            <Typography variant="h6">Total Income</Typography>
-            <Typography variant="h4">${data.totalIncome}</Typography>
+            <div className="FinancialIcons">
+              <CallToActionIcon />
+              <TrendingUpIcon />
+            </div>
+            <Typography style={{ color: "#fff" }} variant="h6">
+              Total Income
+            </Typography>
+            <Typography style={{ color: "#fff" }} variant="h6">
+              ${data.totalIncome}
+            </Typography>
           </CardContent>
         </Card>
       </Grid>
       <Grid item xs={3}>
-        <Card className='card'>
+        <Card className="card">
           <CardContent>
-            <Typography variant="h6">Total Outcome</Typography>
-            <Typography variant="h4">${data.totalOutcome}</Typography>
+            <div className="FinancialIcons">
+              <CallToActionIcon />
+              <TrendingUpIcon />
+            </div>
+            <Typography style={{ color: "#fff" }} variant="h6">
+              Total Outcome
+            </Typography>
+            <Typography style={{ color: "#fff" }} variant="h6">
+              ${data.totalOutcome}
+            </Typography>
           </CardContent>
         </Card>
       </Grid>
       <Grid item xs={3}>
-        <Card className='card'>
+        <Card className="card">
           <CardContent>
-            <Typography variant="h6">Income</Typography>
-            <Typography variant="h4">${data.income}</Typography>
+            <div className="FinancialIcons">
+              <MonetizationOnIcon />
+              <TrendingUpIcon />
+            </div>
+            <Typography style={{ color: "#fff" }} variant="h6">
+              Income
+            </Typography>
+            <Typography style={{ color: "#fff" }} variant="h6">
+              ${data.income}
+            </Typography>
           </CardContent>
         </Card>
       </Grid>
       <Grid item xs={3}>
-        <Card className='card'>
+        <Card className="card">
           <CardContent>
-            <Typography variant="h6">Expenses</Typography>
-            <Typography variant="h4">${data.expenses}</Typography>
+            <div className="FinancialIcons">
+              <MoneyIcon />
+              <TrendingUpIcon />
+            </div>
+            <Typography style={{ color: "#fff" }} variant="h6">
+              Expenses
+            </Typography>
+            <Typography style={{ color: "#fff" }} variant="h6">
+              ${data.expenses}
+            </Typography>
           </CardContent>
         </Card>
       </Grid>
